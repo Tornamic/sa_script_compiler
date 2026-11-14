@@ -1,0 +1,7 @@
+/build/
+/.xmake/
+/.vs/
+/vsxmake*/
+*.pdb
+*.ilk
+.vscode/

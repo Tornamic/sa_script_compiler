@@ -1,0 +1,34 @@
+#include <windows.h>
+#include "../src/resource.h"
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+
+IDI_MAINICON ICON "icon_105.ico"
+
+IDR_MAINMENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Load",                       ID_FILE_LOAD
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Run"
+    BEGIN
+        MENUITEM "Run &MultiFile Parser",       ID_RUN_MULTIFILE
+    END
+    POPUP "&Target"
+    BEGIN
+        MENUITEM "&San Andreas",                ID_TARGET_SAN_ANDREAS
+        MENUITEM "San Andreas &PC",             ID_TARGET_SA_PC, CHECKED
+        MENUITEM "San Andreas &Xbox",           ID_TARGET_SA_XBOX
+        MENUITEM "San Andreas Xbox &360",       ID_TARGET_SA_XBOX360
+    END
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_LOAD            "Load File To Be Parsed"
+    ID_FILE_EXIT            "Exit Program"
+    ID_RUN_PARSER           "Run Parser On Loaded File"
+END

@@ -1,0 +1,5 @@
+ICON 1 lang=2057 size=744
+MENU 101 lang=2057 size=288
+STRING 2501 lang=2057 size=150
+GROUP_ICON 105 lang=2057 size=20
+MANIFEST 1 lang=1033 size=381
